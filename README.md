@@ -1,7 +1,6 @@
 # Crypto Sentiment MCP Server
 
-An MCP server that delivers cryptocurrency sentiment analysis to AI agents, leveraging Santiment's aggregated social media and news data to track market mood and detect emerging trends.
-
+[![smithery badge](https://smithery.ai/badge/@dreamcoin1998/crypto-sentiment-mcp)](https://smithery.ai/server/@dreamcoin1998/crypto-sentiment-mcp)
 ![GitHub License](https://img.shields.io/github/license/kukapay/crypto-sentiment-mcp)
 ![Python Version](https://img.shields.io/badge/python-3.10+-blue)
 ![Status](https://img.shields.io/badge/status-active-brightgreen.svg)
@@ -30,6 +29,14 @@ An MCP server that delivers cryptocurrency sentiment analysis to AI agents, leve
 - **Santiment API Key**: Obtain a free or paid key from [Santiment](https://app.santiment.net/). 
 
 ## Installation
+
+### Installing via Smithery
+
+To install crypto-sentiment-mcp for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@dreamcoin1998/crypto-sentiment-mcp):
+
+```bash
+npx -y @smithery/cli install @dreamcoin1998/crypto-sentiment-mcp --client claude
+```
 
 1. **Clone the Repository**:
    ```bash
