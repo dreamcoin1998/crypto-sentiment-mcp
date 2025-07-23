@@ -1,0 +1,19 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => ({ command: 'python', args: ['main.py'], env: { SANTIMENT_API_KEY: config.santimentApiKey } })
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - santimentApiKey
+    properties:
+      santimentApiKey:
+        type: string
+        description: Santiment API key for authenticating with the Santiment API.
+  exampleConfig:
+    santimentApiKey: your_santiment_api_key_here
